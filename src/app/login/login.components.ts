@@ -23,14 +23,14 @@ export class LoginComponent{
         console.log(form); 
         this.http.ingresarLogin(form)
         .subscribe(data =>{
-            console.log(data.data._token);
-            if(data.status != null){
+            // console.log(data.data._token);
+            // if(data.status != null){
                 
                 
-                localStorage.setItem('token', data.data._token);
-                this.router.navigate(['home']);
-                //this.router.navigate(['items'], { relativeTo: this.route });
-            }
+            //     localStorage.setItem('token', data.data._token);
+            //     this.router.navigate(['home']);
+            //     //this.router.navigate(['items'], { relativeTo: this.route });
+            // }
         }); 
     }
 
